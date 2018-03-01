@@ -1,0 +1,189 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	width: 800px;
+    color: grey;
+}
+li{
+	list-style: none;
+	display: grid;
+	grid-gap: 1%;
+
+	grid-template-columns: 21% 50% 29%;
+	margin: 10px 0;
+}
+li .titulo{
+	font-weight: bold;
+}
+li .titulo .requerido{
+	color:	red;
+}
+li .titulo, li div, li p{
+	padding: 5px;
+}
+li .titulo, li p{
+	text-align: right;
+
+}
+li input{
+	margin: 5px;
+
+}
+
+li div span{
+	display: grid;
+	grid-template-rows: 50% 50%
+}
+
+li#direccion .bloque{
+	margin-left: -5px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 35% 65%;
+	grid-gap: 0px;
+}
+li div.bloque2{
+	display: grid;
+	grid-template-columns: 50% 50%; 
+}
+li span input{
+	margin-left: -1px;
+}
+select{
+	margin-top: 4px;
+}
+li input.corto, li select.corto {
+	width: 150px;
+}
+li input.largo{
+	width: 250px;
+}
+input#codigopostal, select#provincia{
+	width: 100px;
+}
+li span label{
+	font-size: 12px;
+}
+li input, li select{
+	border-right-color: #EEE;
+	border-bottom-color: #EEE;
+	border-left-color:	#CCC;
+	border-top-color: #CCC;
+	border-width: 1px;
+}
+li .ayuda{
+	display: none;
+	margin-right: 15px;
+}
+li:not(#submit):hover{
+	background-color: #ffe9026b;
+
+}
+li:hover .ayuda{
+
+	display: block;
+}
+li:not(#submit) input:hover, li select:hover {
+	border-color: #ffa500;
+	margin-top:	3px;
+	border-width: 2px;
+	border-style: solid;
+}
+li{
+	min-height: 80px;
+}
+
+li#submit input{
+	max-height: 25px;
+	max-width: 120px;
+	border:	1px;
+	border-color: gray;
+	text-align: right;
+}
+li#submit{
+	grid-column: 1 / 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+li{
+	width: 100%;
+	display: block;
+	height: 200px;
+}
+li#nombre{
+	/*float: left;*/
+	/*width: 500px;*/
+	/*display: block;
+}
+li#direccion{
+	/*float: left;*/
+	/*width: 500px;*/
+	/*display: block;
+}
+li#email{
+	/*float: left;*/
+	/*width: 500px;*/
+	/*display: block;
+}
+li#telefono{
+	/*float: left;*/
+	/*width: 500px;*/
+	/*display: block;
+}
+li#submit{
+	/*float: left;
+	display: block;
+}
+li label.titulo{
+	width:100px;
+	height:20% ;
+	float: left;
+
+}
+li > div{
+	width: 50%;
+	height: 200px;
+
+	float: left;
+
+}
+li .ayuda{
+	float: right;
+	width: 25%;
+
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
